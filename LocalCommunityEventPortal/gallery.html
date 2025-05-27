@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Community Event Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    figure {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    figure:hover {
+      transform: scale(1.03);
+    }
+
+    figure img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    figcaption {
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      color: #555;
+    }
+
+    .img-border {
+      border: 4px solid #3498db;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Community Event Gallery</h1>
+
+  <div class="gallery-container">
+    <figure>
+      <img src="images/event1.jpg" alt="Food Festival" title="Food Festival 2024" class="img-border">
+      <figcaption>🎉 Food Festival – Delicious local cuisine</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/event2.jpg" alt="Music Night" title="Live Music Night" class="img-border">
+      <figcaption>🎵 Music Night – Live bands and dancing</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/event3.jpg" alt="Art Fair" title="Street Art Fair" class="img-border">
+      <figcaption>🎨 Art Fair – Local artists showcase</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/event4.jpg" alt="Tree Planting" title="Community Tree Planting" class="img-border">
+      <figcaption>🌱 Tree Planting – Green our city</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/event5.jpg" alt="Book Swap" title="Neighborhood Book Swap" class="img-border">
+      <figcaption>📚 Book Swap – Share and discover books</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/event6.jpg" alt="Pet Parade" title="Pet Parade Day" class="img-border">
+      <figcaption>🐶 Pet Parade – Cutest pets in town</figcaption>
+    </figure>
+  </div>
+
+  <footer>&copy; 2025 Local Community Events</footer>
+
+</body>
+</html>

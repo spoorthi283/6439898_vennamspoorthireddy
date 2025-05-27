@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Event Promo Video</title>
+  <style>
+    body {
+      font-family: 'Arial';
+      text-align: center;
+      background-color: #fcfcfc;
+      padding: 40px;
+    }
+    video {
+      width: 80%;
+      max-width: 700px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    #status {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+<h2>🎥 Community Event Promo</h2>
+
+<video id="promoVideo" controls oncanplay="showReadyMessage()">
+  <source src="videos/Video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div id="status"></div>
+
+<script>
+  function showReadyMessage() {
+    document.getElementById('status').textContent = "✅ Video ready to play!";
+  }
+
+  window.onbeforeunload = function () {
+    return "You have unsaved progress. Are you sure you want to leave?";
+  };
+</script>
+
+</body>
+</html>
